@@ -1,0 +1,126 @@
+.features {
+  perspective: 800px;
+}
+
+.feature-box {
+  background-color: rgba($color-black, .05);
+  box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+  text-align: center;
+  padding: 3rem;
+  transition: transform .3s;
+  height: 83rem;
+
+  @include respond(tab-port) {
+    height: 85rem;
+  }
+
+  &__icon {
+    background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+    color: transparent;
+    display: inline-block;
+    font-size: 6rem;
+    -webkit-background-clip: text;
+    margin-bottom: 1rem;
+  }
+
+  & h3 {
+    backface-visibility: hidden;
+    transition: all .3s;
+  }
+
+  & a {
+    &:link,
+    &:visited {
+      display: block;
+      margin: 0 auto;
+      padding: 1rem 0;
+      width: 80%;
+      text-decoration: none;
+      transition: .5s all;
+    }
+
+    &::after {
+      background-color: $color-primary-light;
+      content: '';
+      display: block;
+      width: 10rem;
+      height: 1px;
+      margin-top: 1rem;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      transition: .5s all;
+    }
+
+    &:hover {
+      color: $color-primary-dark;
+      &::after {
+        background-color: $color-primary-dark;
+        width: 25rem;
+      }
+    }
+  }
+
+  &:hover h3 {
+    color: #555555;
+    box-shadow: .1rem .1rem .8rem $color-primary-light;
+  }
+
+  &__img {
+    width: 60px;
+    margin-bottom: 1rem;
+
+    @include respond(phone) {
+      width: 55px;
+    }
+
+    @include respondCustom(400px) {
+      width: 50px;
+    }
+
+    @include respondCustom(350px) {
+      width: 45px;
+    }
+  }
+
+
+
+  &__passion {
+    background-color: $color-primary-dark;
+    border: 3px solid $color-secondary;
+    width: 6rem;
+    height: 6rem;
+    margin: 4rem auto 3rem;
+    transform: rotate(45deg);
+    position: relative;
+    transition: all 1s;
+
+    &:hover {
+      border-color: $color-secondary-dark;
+
+      & > * {
+        fill: $color-secondary-dark
+      }
+    }
+
+    &-icon {
+      fill: $color-secondary;
+      width: 3.5rem;
+      height: 3.5rem;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(-45deg);
+      transition: all 1s;
+    }
+  }
+
+  &__heading-secondary {
+    margin-bottom: 1rem;
+  }
+
+  &__text {
+    width: 80%;
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "dev": "parcel index.html",
+    "compile:sass": "node-sass sass/main.scss public/css/styles.css -w",
+    "devserver": "live-server",
+    "start": "npm-run-all --parallel devserver compile:sass"
+  },
+  "author": "",
+  "license": "ISC",
+  "engines": {
+    "node": "12.18.2"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "jquery": "^3.5.1",
+    "live-server": "^1.2.1",
+    "nodemailer": "^6.4.16",
+    "nodemailer-mailgun-transport": "^2.0.2"
+  },
+  "devDependencies": {
+    "mixitup": "^3.3.1",
+    "node-sass": "^4.14.1",
+    "npm-run-all": "^4.1.5",
+    "parcel-bundler": "^1.12.4"
+  },
+  "keywords": [],
+  "description": ""
+}

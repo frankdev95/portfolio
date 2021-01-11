@@ -1,0 +1,60 @@
+.skills {
+  width: 90%;
+  max-width: 90%;
+  padding: 0 2rem;
+  text-align: left;
+
+  & .skill {
+
+    &__name {
+      display: inline-block;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.3rem;
+      font-weight: 600;
+      margin: 1.5rem 0;
+      text-transform: uppercase;
+    }
+
+    &__bar {
+      background-color: #cacaca;
+      border-radius: 8px;
+      height: 1.5rem;
+    }
+
+    &__per {
+      background-color: $color-primary-dark;
+      border-radius: inherit;
+      height: inherit;
+      width: 0;
+      transition: width 1s linear;
+      position: relative;
+
+      &::before {
+        border-radius: 4px;
+        background-color: #000;
+        content: attr(per);
+        color: #fff;
+        font-size: 1.2rem;
+        display: inline-block;
+        position: absolute;
+        padding: .3rem .5rem;
+        right: 0;
+        top: -3.3rem;
+        transform: translateX(50%);
+      }
+
+      &::after {
+        background-color: #000;
+        border-radius: 1px;
+        content: '';
+        position: absolute;
+        width: .8rem;
+        height: .8rem;
+        right: 0;
+        top: -1.7rem;
+        transform: translateX(50%) rotate(45deg);
+      }
+    }
+  }
+}
+

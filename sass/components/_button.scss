@@ -1,0 +1,118 @@
+.portfolio {
+
+  &__item .btn {
+    border: 1px solid $color-secondary-dark;
+    border-radius: 5px;
+    color: $color-secondary-dark;
+    display: inline-block;
+    font-size: 1.4rem;
+    font-weight: 300;
+    padding: 1rem 2.5rem;
+    transition: all .5s ease;
+    z-index: 100;
+
+    &::before {
+      background-image: linear-gradient(to left, $color-secondary, $color-secondary-dark);
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      transform: scaleX(0);
+      transform-origin: 0 50%;
+      transition: transform .5s ease-out;
+      z-index: -1;
+    }
+
+    &:hover::before {
+      transform: scaleX(1);
+      transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+    }
+
+    &:hover {
+      animation: buzzOut .75s ease-in-out;
+      color: #fff;
+    }
+  }
+}
+
+a.btn {
+
+  &:link,
+  &:visited {
+    border: 1px solid $color-white;
+    border-radius: 2px;
+    display: inline-block;
+    padding: 1.5rem 4rem;
+    position: relative;
+    transition: all .3s;
+
+    @include respond(phone) {
+      padding: 1.5rem 3rem;
+    }
+
+    @include respondCustom(350px) {
+      padding: 1rem 2.5rem;
+    }
+  }
+
+  &:hover {
+    background-color: rgba($color-white, .3);
+    color: $color-secondary-dark;
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba($color-black, .2);
+
+    & span {
+      display: inline-block;
+      transform: rotate(90deg);
+    }
+
+    &::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0;
+    }
+  }
+
+  &:active {
+    border: none;
+    background-color: rgba($color-white, 1);
+    box-shadow: 0 .5rem 1.5rem rgba($color-black, .4);
+    transform: translateY(1px);
+  }
+
+  &::after {
+    border: 1px solid $color-white;
+    border-radius: 2px;
+    content: '';
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    padding: 1.5rem 4rem;
+    position: absolute;
+    transition: all .4s;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+}
+
+.modal__btn {
+  border-radius: 2px;
+  cursor: pointer;
+  width: 13rem;
+  background-color: rgba(#14274e, .8);
+  padding: 1rem 0;
+
+  span {
+    a:link,
+    a:visited {
+      text-decoration: none;
+      color: #fff;
+      text-transform: uppercase;
+      font-weight: 400;
+      font-size: 1.5rem;
+      font-family: Montserrat, sans-serif;
+    }
+  }
+}

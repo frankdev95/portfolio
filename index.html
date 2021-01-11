@@ -1,0 +1,406 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/icon-font.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+<section id="home" class="header">
+    <canvas class="canvas"></canvas>
+    <div class="header__text-box u-center-text">
+        <div class="heading__text u-center-text">
+            Hi, I'm <span>Frank Lockett</span>.
+            <br>
+            I'm a full-stack web developer.
+            <br>
+        </div>
+        <a href="" class="btn view-port">See my work <span>&rArr;</span></a>
+    </div>
+    <nav class="navigation">
+        <div class="navigation__main">
+            <div class="navigation__link" dest="home">Home</div>
+            <div class="navigation__link" dest="about">About</div>
+            <div class="navigation__link" dest="portfolio">Portfolio</div>
+            <div class="navigation__link" dest="contact">Contact</div>
+            <div class="navigation__sub">
+                <input id="navi-toggle" type="checkbox" class="navigation__sub-checkbox">
+                <label for="navi-toggle" class="navigation__sub-button">
+                    <span class="navigation__sub-icon"></span>
+                </label>
+                <div class="navigation__sub-background">&nbsp;</div>
+                <nav class="navigation__sub-nav">
+                    <ul class="navigation__sub-list">
+                        <li class="navigation__sub-item"><a href="" class="navigation__sub-link">Home</a></li>
+                        <li class="navigation__sub-item"><a href="" class="navigation__sub-link">About</a></li>
+                        <li class="navigation__sub-item"><a href="" class="navigation__sub-link">Portfolio</a></li>
+                        <li class="navigation__sub-item"><a href="" class="navigation__sub-link">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </nav>
+</section>
+<section id="about" class="about">
+    <div class="heading waypoint" data-animation="slide-in-left">
+        <h1 class="heading-primary u-margin-bottom-big">About</h1>
+    </div>
+    <div class="about__container">
+        <div class="about__profile waypoint" data-animation="fade-in-scale">
+            <img src="img/profile.jpg" alt="profile image">
+        </div>
+        <div class="about__content u-margin-bottom-big waypoint" data-animation="slide-in-right">
+            <p>
+                I am a predominantly self taught full-stack developer from Kent, England. I have been exploring the
+                vast world of programming for four years, and during that time have inquisitively delved into numerous
+                fields. I was introduced to programming during my music degree, which immediately ignited a strong,
+                sincere passion and desire to learn more. Since then, I have studied numerous programming fields such
+                as game, app, web and software development. During my studies I have acquired a vast portfolio of
+                which a portion I showcase in this website. My strong ambition is to cement my place on the career
+                ladder, applying my skills and knowledge in a professional setting, and to strengthen my abilities as
+                a programmer.
+            </p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="features">
+            <div class="col-1-of-3 feature-box waypoint" data-animation="rotate-180-y">
+                <i class="feature-box__icon icon-basic-settings"></i>
+                <h3 class="feature-box__heading-primary">Skills</h3>
+                <div class="skills">
+                    <div class="skill">
+                        <div class="skill__name">HTML</div>
+                        <div class="skill__bar">
+                            <div class="skill__per" per="70"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill__name">CSS</div>
+                        <div class="skill__bar">
+                            <div class="skill__per" per="70"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill__name">PHP</div>
+                        <div class="skill__bar">
+                            <div class="skill__per" per="50"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill__name">JavaScript</div>
+                        <div class="skill__bar">
+                            <div class="skill__per" per="65"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill__name">Java</div>
+                        <div class="skill__bar">
+                            <div class="skill__per" per="65"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill__name">Python</div>
+                        <div class="skill__bar">
+                            <div class="skill__per" per="40"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill__name">JQuery</div>
+                        <div class="skill__bar">
+                            <div class="skill__per" per="50"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill__name">Angular</div>
+                        <div class="skill__bar">
+                            <div class="skill__per" per="40"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill__name">Node.js</div>
+                        <div class="skill__bar">
+                            <div class="skill__per" per="40"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill__name">MySQL</div>
+                        <div class="skill__bar">
+                            <div class="skill__per" per="60"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-1-of-3 feature-box waypoint" data-animation="rotate-180-y" data-delay=".1s">
+                <i class="feature-box__icon icon-basic-book-pen"></i>
+                <h3 class="feature-box__heading-primary">Courses</h3>
+                <img class="feature-box__img" src="img/udemy.png" alt="udemy logo">
+                <a href="">The Complete 2020 Web Development Bootcamp</a>
+                <a href="">Modern JavaScript</a>
+                <a href="">JavaScript: Understanding the Weird Parts</a>
+                <a href="">Java Programming Masterclass for Software Developers</a>
+                <a href="">Angular - The Complete Guide (2020 Edition)</a>
+                <img class="feature-box__img u-margin-top-small" src="img/hyperion.png" alt="hyperion-dev logo">
+                <a href="">Software Engineering Bootcamp</a>
+                <img class="feature-box__img u-margin-top-small" src="img/uofs.png" alt="university of sussex logo">
+                <a href="">Music Technology</a>
+            </div>
+            <div class="col-1-of-3 feature-box waypoint" data-animation="rotate-180-y" data-delay=".3s">
+                <i class="feature-box__icon icon-basic-heart"></i>
+                <h3 class="feature-box__heading-primary">Passions</h3>
+                <div class="feature-box__passion">
+                    <svg class="feature-box__passion-icon">
+                        <use xlink:href="img/sprite.svg#icon-light-bulb"></use>
+                    </svg>
+                </div>
+                <h1 class="feature-box__heading-secondary">Intuitive</h1>
+                <p class="feature-box__text">Devoted to easy to use, intuitive design that sparks interest, enabling a
+                    superior user experience.</p>
+                <div class="feature-box__passion">
+                    <svg class="feature-box__passion-icon">
+                        <use xlink:href="img/sprite.svg#icon-laptop"></use>
+                    </svg>
+                </div>
+                <h1 class="feature-box__heading-secondary">Responsive</h1>
+                <p class="feature-box__text">Effective layouts that are responsive on all devices.</p>
+                <div class="feature-box__passion">
+                    <svg class="feature-box__passion-icon">
+                        <use xlink:href="img/sprite.svg#icon-round-brush"></use>
+                    </svg>
+                </div>
+                <h1 class="feature-box__heading-secondary">Dynamic</h1>
+                <p class="feature-box__text">I love making websites feel alive, interactive and animated.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="portfolio" class="portfolio">
+    <div class="heading waypoint" data-animation="slide-in-left">
+        <h1 class="heading-primary u-margin-top-huge">Portfolio</h1>
+    </div>
+    <div class="portfolio__headings waypoint" data-animation="slide-down">
+        <h1 class="heading__secondary active" data-filter="all">All</h1>
+        <h1 class="heading__secondary" data-filter=".js">JavaScript</h1>
+        <h1 class="heading__secondary" data-filter=".udemy">Udemy</h1>
+        <h1 class="heading__secondary" data-filter=".java">Java</h1>
+        <h1 class="heading__secondary" data-filter=".php">PHP</h1>
+    </div>
+    <div id="port" class="portfolio__container waypoint">
+        <div class="portfolio__item mix udemy">
+            <img src="img/slides/natours-0.png" alt="">
+            <div class="portfolio__item-text">
+                <div>Natours</div>
+                <span>HTML/CSS</span>
+            </div>
+            <div class="btn" id="natours">Learn More</div>
+        </div>
+        <div class="portfolio__item mix udemy">
+            <img src="img/trillo.png" alt="">
+            <div class="portfolio__item-text">
+                <div>Trillo</div>
+                <span>HTML/CSS</span>
+            </div>
+            <div class="btn" id="trillo">Learn More</div>
+        </div>
+        <div class="portfolio__item mix js">
+            <img src="img/invaders.jpg" alt="">
+            <div class="portfolio__item-text">
+                <div>Space Invaders</div>
+                <span>JavaScript</span>
+            </div>
+            <div class="btn" id="spaceinvaders" isVideo="yes">Learn More</div>
+        </div>
+        <div class="portfolio__item mix js">
+            <img src="img/asteroids.png" alt="">
+            <div class="portfolio__item-text">
+                <div>Asteroids</div>
+                <span>JavaScript</span>
+            </div>
+            <div class="btn" id="asteroids" isVideo="yes">Learn More</div>
+        </div>
+        <div class="portfolio__item mix js">
+            <img src="img/flappy.png" alt="">
+            <div class="portfolio__item-text">
+                <div>Flappy Bird</div>
+                <span>JavaScript</span>
+            </div>
+            <div class="btn" id="flappybird" isVideo="yes">Learn More</div>
+        </div>
+        <div class="portfolio__item mix js">
+            <img src="img/organiser.png" alt="">
+            <div class="portfolio__item-text">
+                <div>Organiser</div>
+                <span>JavaScript/Node.js</span>
+            </div>
+            <div class="btn" id="organiser">Learn More</div>
+        </div>
+        <div class="portfolio__item mix java">
+            <img src="img/project-manager.png" alt="">
+            <div class="portfolio__item-text">
+                <div>Project Manager</div>
+                <span>Java/MySQL</span>
+            </div>
+            <div class="btn" id="projectmanager">Learn More</div>
+        </div>
+        <div class="portfolio__item mix php">
+            <img src="img/slides/rsz_cms-4.png" alt="">
+            <div class="portfolio__item-text">
+                <div>Content Management System</div>
+                <span>PHP</span>
+            </div>
+            <div class="btn" id="cms">Learn More</div>
+        </div>
+        <div class="portfolio__item mix javascript">
+            <img src="img/interactive.png" alt="">
+            <div class="portfolio__item-text">
+                <div>Music Game</div>
+                <span>JavaScript</span>
+            </div>
+            <div class="btn" id="interactive" isVideo="yes">Learn More</div>
+        </div>
+    </div>
+</section>
+<section class="blog">
+
+</section>
+<section id="contact" class="contact">
+    <div class="contact__container">
+        <div class="contact__text">
+            <h1 class="heading-primary waypoint" data-animation="slide-in-right">Contact</h1>
+            <p class="waypoint" data-animation="slide-in-right" data-delay=".1s">Would you like to make an enquiry?</p>
+        </div>
+        <form  action="https://formspree.io/f/mleowanw"
+               method="POST" class="form" >
+            <div class="form__group waypoint" data-animation="slide-in-left">
+                <input class="form__input" name="name" id="name" type="text" autocomplete="off" placeholder="Name"
+                       required>
+            </div>
+            <div class="form__group waypoint" data-animation="slide-in-left" data-delay=".2s">
+                <input class="form__input" name="email" id="email" autocomplete="off" type="email"
+                       placeholder="Email Address"
+                       required>
+            </div>
+            <div class="form__group waypoint" data-animation="slide-in-left" data-delay=".4s">
+                <textarea name="textarea" id="message" cols="30" rows="10" required></textarea>
+            </div>
+            <div class="form__success">
+                <div>
+                    <p></p>
+                    <svg class="success-close">
+                        <use xlink:href="img/sprite.svg#icon-cross"></use>
+                    </svg>
+                </div>
+            </div>
+            <div class="form__group waypoint" data-animation="slide-up">
+                <input class="submit-btn" type="submit" id="submit" value="SUBMIT">
+            </div>
+        </form>
+    </div>
+</section>
+<footer>
+    <div class="footer__container">
+        <div class="footer__top">
+            <svg>
+                <use xlink:href="img/sprite.svg#icon-chevron-thin-up"></use>
+            </svg>
+            <svg>
+                <use xlink:href="img/sprite.svg#icon-chevron-thin-up"></use>
+            </svg>
+        </div>
+        <div class="footer__icons">
+            <a href="https://github.com/frankdev95" target="_blank">
+                <div class="footer__icon-container">
+                    <svg class="visible">
+                        <use xlink:href="img/sprite.svg#icon-github"></use>
+                    </svg>
+                    <svg class="hidden">
+                        <use xlink:href="img/sprite.svg#icon-github"></use>
+                    </svg>
+                </div>
+            </a>
+            <a href="https://www.linkedin.com/in/frank-lockett-dev/" target="_blank">
+            <div class="footer__icon-container">
+                <svg class="visible">
+                    <use xlink:href="img/sprite.svg#icon-linkedin"></use>
+                </svg>
+                <svg class="hidden">
+                    <use xlink:href="img/sprite.svg#icon-linkedin"></use>
+                </svg>
+            </div>
+            </a>
+            <a href="https://www.facebook.com/frank.lockett1/" target="_blank">
+                <div class="footer__icon-container">
+                    <svg class="visible">
+                        <use xlink:href="img/sprite.svg#icon-facebook2"></use>
+                    </svg>
+                    <svg class="hidden">
+                        <use xlink:href="img/sprite.svg#icon-facebook2"></use>
+                    </svg>
+                </div>
+            </a>
+            <a href="https://frankjdev.blogspot.com/" target="_blank">
+            <div class="footer__icon-container">
+                <svg class="visible">
+                    <use xlink:href="img/sprite.svg#icon-blogger2"></use>
+                </svg>
+                <svg class="hidden">
+                    <use xlink:href="img/sprite.svg#icon-blogger2"></use>
+                </svg>
+            </div>
+            </a>
+        </div>
+        <span>FRANK LOCKETT &copy; 2020 </span>
+    </div>
+</footer>
+<div class="modal-wrap">
+    <div class="mask"></div>
+    <div class="modal">
+        <svg class="modal__close">
+            <use xlink:href="img/sprite.svg#icon-cross"></use>
+        </svg>
+        <div class="modal__carousel-wrap">
+            <div class="modal__carousel">
+            </div>
+            <div class="modal__carousel--nav">
+            </div>
+            <div class="modal__left-arrow arrow" arrow="left">
+                <svg>
+                    <use xlink:href="img/sprite.svg#icon-arrow-left2"></use>
+                </svg>
+            </div>
+            <div class="modal__right-arrow arrow" arrow="right">
+                <svg>
+                    <use xlink:href="img/sprite.svg#icon-arrow-right2"></use>
+                </svg>
+            </div>
+        </div>
+        <div class="modal__text">
+            <div class="modal__text-heading">
+                <h1></h1>
+                <h2></h2>
+            </div>
+            <div class="modal__text-description">
+                <p></p>
+            </div>
+        </div>
+        <div class="modal__btn">
+            <svg class="modal__btn-icon">
+                <use xlink:href="img/sprite.svg#icon-login"></use>
+            </svg>
+            <span><a class="modal__link" href="" target="_blank">View Site</a></span></div>
+    </div>
+</div>
+</body>
+</html>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="scripts/mixitup.min.js"></script>
+<script src="scripts/jquery.waypoints.min.js"></script>
+<script src="scripts/modal.js"></script>
+<script src="scripts/index.js"></script>

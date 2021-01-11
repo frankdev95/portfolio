@@ -1,0 +1,63 @@
+@mixin clearfix {
+  &::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin xyCentered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+// MEDIA QUERY MANAGER
+/*
+0 - 600px: Phone
+600-900px: Tablet Portrait
+900-1200px: Tablet Landscape
+[1200-1800]: Default styles (standard desktop)
+1800+px: Large Desktop
+
+$breakpoint argument options:
+- phone
+- tab-port
+- tab-land
+- large-desk
+
+ORDER: Base + Typography > general layout + grid > page layout + components
+
+1em = 16px
+ */
+
+@mixin respond($breakpoint) {
+  @if ($breakpoint == phone) {
+    @media (max-width: 37.5em) {           // 600px
+      @content
+    }
+  } @else if ($breakpoint == tab-port) {   //900px
+    @media (max-width: 56.25em) {
+      @content
+    }
+  } @else if ($breakpoint == tab-land) {   //1200px
+    @media (max-width: 75em) {
+      @content
+    }
+  } @else if ($breakpoint == large-desk) { //1800px
+    @media (min-width: 112.5em) {
+      @content
+    }
+  }
+}
+
+@mixin respondCustom($breakpoint) {
+  @media (max-width: $breakpoint) {
+    @content
+  }
+}
+
+@mixin changeVariable($variable) {
+  $gutter-horizontal: $variable;
+}
