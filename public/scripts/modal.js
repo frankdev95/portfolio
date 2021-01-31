@@ -18,37 +18,37 @@ $(document).ready(() => {
         spaceinvaders: {
             title: "Space Invaders",
             tag: "ATARI STYLE SPACE INVADERS GAME",
-            description: "An atari style space invaders game made using vanilla JavaScript."
-        },
-        asteroids: {
-            title: "Asteroids",
-            tag: "ATARI STYLE ASTEROIDS GAME",
-            description: "An atari style asteroids game made using vanilla JavaScript"
+            description: "An atari style space invaders game made using vanilla JavaScript.",
+            link: "https://github.com/frankdev95/js-space-invader"
         },
         flappybird: {
             title: "Flappy Bird",
             tag: "FLAPPY BIRD STYLE GAME",
-            description: "A flappy bird style game made using vanilla JavaScript"
+            description: "A flappy bird style game made using vanilla JavaScript",
+            link: "https://js-flappy-bird.herokuapp.com/"
         },
         projectmanager: {
             title: "Project Manager",
             tag: 'PROJECT MANAGER SOFTWARE',
             description: "Software application made using Java that allows a small structural engineering firm to " +
                 "organise current or previous projects they have been working on.",
-            numPhotos: 1
+            numPhotos: 1,
+            link: "https://github.com/frankdev95/project-manager"
         },
         taskmanager: {
             title: "Task Manager",
             tag: "TASK MANAGER SOFTWARE",
             description: "Software application made using python that allows effective organisation and management " +
                 "of user tasks.",
-            numPhotos: 1
+            numPhotos: 1,
+            link: "https://github.com/frankdev95/Task-Manager"
         },
         space: {
             title: "Space Game",
             tag: "BASIC SPACE GAME",
             description: "A basic space themed game made using python with the pygame library. The user controls a " +
-                "weaponized spaceship to defeat an assortment of enemies."
+                "weaponized spaceship to defeat an assortment of enemies.",
+            link: "https://github.com/frankdev95/space-game"
         },
         interactive: {
             title: "Interactive Music Game",
@@ -69,7 +69,7 @@ $(document).ready(() => {
             tag: "SENSITIVE INFORMATION ORGANISER",
             description: "An organiser that allows you to store and keep track of sensitive information.",
             numPhotos: 8,
-            link: "https://secure-organiser.herokuapp.com/login"
+            link: "https://secure-organiser.herokuapp.com"
         }
     }
 

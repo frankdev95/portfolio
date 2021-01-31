@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../js-flappy-bird/.idea/FlappyBird.iml" filepath="$PROJECT_DIR$/../js-flappy-bird/.idea/FlappyBird.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Portfolio2.iml" filepath="$PROJECT_DIR$/.idea/Portfolio2.iml" />
     </modules>
   </component>
