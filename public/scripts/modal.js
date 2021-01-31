@@ -62,7 +62,8 @@ $(document).ready(() => {
             tag: "BLOG",
             description: "A content management system that allows you to blog and read other blog posts from registered" +
                 " users.",
-            numPhotos: 11
+            numPhotos: 11,
+            link: "https://github.com/frankdev95/CMS-Blog---PHP"
         },
         organiser: {
             title: "Organiser",
